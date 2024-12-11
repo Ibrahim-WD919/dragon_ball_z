@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😎 Dragon Ball</title>
+    <link rel="stylesheet" href="highlight.css">
+    <link rel="stylesheet" href="../FontAwesome/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <div class="container"> 
+       <nav> 
+        <div class="navbar">
+            <div class="left"><img src="ibrahim.png"  height="70%"></div>
+            <div class="center">
+                <img src="logo_Dragon_ball.png" height="80px">
+            </div>
+            <div class="right">
+                <button id="ca">Create account</button>
+                <button id="li">Log in</button>
+                <br>
+                <input type="search" placeholder="Search">
+                <button id="en" type="text">EN  <i class="fa-solid fa-play"></i> </button>
+                
+                <div class="lang-box">
+                    <h3 id="l-toggle">LANGUAGE</h3>
+                    <div class="langs">
+                        <h4>JP <i class="fa-solid fa-"></i></h4>
+                        <h4>EN <i class="fa-solid fa-"></i></h4>
+                        <h4>FR <i class="fa-solid fa-"></i></h4>
+                        <h4>DE <i class="fa-solid fa-"></i></h4>
+                        <h4>ES <i class="fa-solid fa-"></i></h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="subnav">
+            <ul>
+                <li> <i class="fa-solid fa-igloo"></i> HOME</li>
+                <li> <i class="fa-solid fa-newspaper"></i> NEWS</li>
+                <li> <i class="fa-solid fa-crown"></i> HIGHLIGHTS</li>
+                <li> <i class="fa-solid fa-tv"></i> VIDEOS</li>
+                <li> <i class="fa-solid fa-calendar-check"></i> FEATURED</li>
+                <li> <i class="fa-solid fa-database"></i> DATABASE</li>
+                <li> <i class="fa-solid fa-book-open"></i> ABOUT</li>
+            </ul>
+        </div>
+       </nav>
+
+    <script>
+        $(document).ready(function(){
+            // $("#en").click(function(){
+            //     $(".lang-box").slideToggle()
+            //     $("#l-toggle").click(function(){
+            //         $(".lang-box").slideUp()
+            //     })
+                
+            // })
+
+          $("#en").click(function(){
+            $(".lang-box").toggle("slow")
+          })
+         
+        });
+    </script>
+
+    
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+</html>

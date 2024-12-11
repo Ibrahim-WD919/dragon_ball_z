@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😎 Dragon Ball</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../FontAwesome/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <div class="container"> 
+       <nav> 
+        <div class="navbar">
+            <div class="left"><img src="ibrahim.png"  height="70%"></div>
+            <div class="center">
+                <img src="logo_Dragon_ball.png" height="80px">
+            </div>
+            <div class="right">
+                <button id="ca">Create account</button>
+                <button id="li">Log in</button>
+                <br>
+                <input type="search" placeholder="Search">
+                <button id="en" type="text">EN  <i class="fa-solid fa-play"></i> </button>
+                
+                <div class="lang-box">
+                    <h3 id="l-toggle">LANGUAGE</h3>
+                    <div class="langs">
+                        <h4>JP <i class="fa-solid fa-"></i></h4>
+                        <h4>EN <i class="fa-solid fa-"></i></h4>
+                        <h4>FR <i class="fa-solid fa-"></i></h4>
+                        <h4>DE <i class="fa-solid fa-"></i></h4>
+                        <h4>ES <i class="fa-solid fa-"></i></h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="subnav">
+            <ul>
+                <li> <i class="fa-solid fa-igloo"></i> HOME</li>
+                <li> <i class="fa-solid fa-newspaper"></i> NEWS</li>
+                <li id="high"> <i class="fa-solid fa-crown"></i> <a href="highlight.html">HIGHLIGHTS</a></li>
+                <li> <i class="fa-solid fa-tv"></i> VIDEOS</li>
+                <li> <i class="fa-solid fa-calendar-check"></i> FEATURED</li>
+                <li> <i class="fa-solid fa-database"></i> DATABASE</li>
+                <li> <i class="fa-solid fa-book-open"></i> ABOUT</li>
+            </ul>
+        </div>
+       </nav>
+        <div class="superhero">
+            <div class="collage">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="Slide1.jpg" style="width:100%; height:414px">
+                      <div class="loader">
+                        <div class="pic"></div>
+                      </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="Slide2.jpe" style="width:100%; height:414px">
+                      <div class="loader">
+                        <div class="pic"></div>
+                      </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="Slide3.jpg" style="width:100%; height:414px">
+                      <div class="loader">
+                        <div class="pic"></div>
+                      </div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <!-- <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div> -->
+
+            </div>
+            <!-- <div class="collage"></div>
+            <div class="collage"></div>
+            <div class="collage"></div>
+            <div class="collage"></div>
+            <div class="collage"></div> -->
+            <div class="caption">
+                <div class="mini"></div>
+                <div class="topics">
+                    <p> <b>26.12.2023</b> <a href="#">Weekly ☆ Character Showcase #137: Bacterian from the Great Demon King Piccolo Arc! </a></p>
+                    <p> <b>26.12.2023</b> <a href="#">New BLOOD OF SAIYANS Figure Coming to Crane Games! </a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="high">
+            <h1>HIGHLIGHTS</h1>
+            <div class="cards">
+                <div class="cb cb1">
+                    <div class="star star1"></div>
+                    <div class="pic pic1"></div>
+                    <button>ANIME</button>
+                    <input type="text" placeholder="28.03.2023">
+                    <p>Brand-New Anime Series “Dragon Ball DAIMA”Coming Fall 2024!</p>
+                
+                    
+                </div>
+                <div class="cb cb2">
+                    <div class="star star2"></div>
+                    <div class="pic pic2"></div>
+                    <button>GAMES</button>
+                    <input type="text" placeholder="28.03.2023">
+                    <p>New DRAGON BALL Z: Budokai Tenkaichi Game Confirmed!! Check Out the Teaser Trailer!!</p>
+                
+                    
+                </div>
+                <div class="cb cb3">
+                    <div class="star star3"></div>
+                    <div class="pic pic3"></div>
+                    <button>FIGURES</button>
+                    <input type="text" placeholder="28.03.2023">
+                    <p>New G×materia Series Figure Bursts Into Crane Games!</p>
+                
+                    
+                </div>
+                <div class="cb cb4">
+                    <div class="star star4"></div>
+                    <div class="pic pic4"></div>
+                    <button>BATTLE</button>
+                    <input type="text" placeholder="28.03.2023">
+                    <p>The Once-A-Year Celebration Returns! Legends Festival 2023 Starts in Dragon Ball Legends!</p>
+                
+                    
+                </div>
+            </div>
+            <div class="mbtn"><button>MORE</button></div>
+        </div>
+
+        <div class="power">
+            <h1>VIDEOS</h1>
+            <div class="video">
+                <!-- <iframe height="100%" width="100%" src="https://www.youtube.com/watch?v=bSCANspTDeE" frameborder=""></iframe> -->
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bSCANspTDeE?si=jj-zq9AENO_Pr3Y_"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowfullscreen></iframe>
+            </div>
+            <div class="goku"></div>
+        </div>
+
+        <div class="eg">
+            <div class="egf">
+            <div class="gb gb1">
+                <div class="boxl">
+                    <div class="snap snap1"></div>
+                    <button>EVENTS</button>
+                </div>
+                <div class="boxr">
+                    <span>14.11.2023</span>
+                    <p>“New York Comic-Con 2023” report!! Victory Uchida has a shocking interview on “Dragon Ball SPECIALPANEL”!</p>
+                </div>
+            </div>
+        
+            <div class="gb gb2">
+                <div class="boxl">
+                    <div class="snap snap2"></div>
+                    <button>GAMES</button>
+                </div>
+                <div class="boxr">
+                    <span>14.10.2022</span>
+                    <p>DRAGON BALL: THE BREAKERS Release Celebration Gameplay Video! Taking on Majin Buu with a Power Level of 5!</p>
+                </div>
+            </div>
+            </div>
+            <div class="mbtn"><button>MORE</button></div>
+        </div>
+
+        <div class="news">
+            <div class="nleft">
+                <div class="l1">
+                    <div class="limg limg1"><img src="gohan.jpeg" ></div>
+                    <button>FIGURES</button>
+                    <span>22.12.2023</span>
+                    <p>Gohan Beast from Dragon Ball Super: SUPER HERO Rockets into the Limit Breaker Series!</p>
+                </div>
+                <div class="l1">
+                    <div class="limg limg2"><img src="gotanks.jpg" ></div>
+                    <button>FIGURES</button>
+                    <span>22.12.2023</span>
+                    <p>Super Saiyan Gotenks is Coming to the Dragon Stars Series Power Up Pack!</p>
+                </div>
+            </div>
+            <!-- <div class="nleft"></div> -->
+            <h1>NEWS</h1>
+        </div>
+
+        <div class="newspart2">
+            <div class="nleft">
+                <div class="l1">
+                    <div class="limg limg1"><img src="go goku.jpg" ></div>
+                    <button>FIGURES</button>
+                    <span>22.12.2023</span>
+                    <p>Super Buu Is Coming to the Dragon Stars Series!</p>
+                </div>
+                <div class="l1">
+                    <div class="limg limg2"><img src="gotanks.jpg" ></div>
+                    <button>FIGURES</button>
+                    <span>22.12.2023</span>
+                    <p>New Dragon Ball Super Chapter in V Jump's Super-Sized February Edition! Check Out the Story So Far!</p>
+                </div>
+                <div class="l1">
+                    <div class="limg limg3"><img src="kamehameha.jpg" ></div>
+                    <button>FIGURES</button>
+                    <span>22.12.2023</span>
+                    <p>Check Out Chapter 100 of the Dragon Ball Super Manga Now in V Jump's Super-Sized February Edition!</p>
+                </div>
+            </div>
+            <div class="mbtn"><button>MORE</button></div>
+        </div>
+
+        <div class="popular">
+            <div class="top"><h2>POPULAR TAGS</h2></div>
+            <div class="bottom">
+                <p>Dragon Ball Z</p>
+                <p>Goku</p>
+                <p>Gohan</p>
+                <p>Dragon Ball Super</p>
+                <p>Gotan</p>
+                <p>Vegita</p>
+                <p>Dragon Ball Legend</p>
+                <p>Cell</p>
+                <p>Majinbu</p>
+                <p>Freeza</p>
+                <p>Dende</p>
+            </div>
+            
+        </div>
+
+        <div class="ourpage">
+            <div class="left">
+                <h2>Follow the official Twitter and be the <br>first to get the latest info!</h2>
+                <br>
+                <span>Follow @DB_official_en</span>
+                <br><br>
+                <p>To view this contect, please allow out site to use cokies. <br> Click here to adjust your Cookie Setting.</p>
+            </div>
+            <div class="right">
+                <div class="tilt-box tilt-box1"></div>
+                <div class="tilt-box tilt-box2"></div>
+                <div class="tilt-box tilt-box3"></div>
+                <div class="tilt-box tilt-box4"></div>
+                <div class="tilt-box tilt-box5"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="left">
+                <h1>SHUEISHA</h1>
+                <button>BANDAI NAMCO</button>
+            </div>
+            <div class="right"></div>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // $("#en").click(function(){
+            //     $(".lang-box").slideToggle()
+            //     $("#l-toggle").click(function(){
+            //         $(".lang-box").slideUp()
+            //     })
+                
+            // })
+
+          $("#en").click(function(){
+            $(".lang-box").toggle("slow")
+          })
+         
+        });
+    </script>
+
+    
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+</html>
